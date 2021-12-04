@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Dictionary</title>
+  </head>
+  <body>
+
+ 
+
+    <!-- <section>
+        <nav>
+            
+            <div class="container">
+                <form>
+                    <h1>Article</h1>
+                    <!-- <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Enter Article" aria-label="Enter Article" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                    </div> -->
+                <!-- </form>
+                <textarea rows="5" cols="50" name="comment" form="usrform">
+                    Enter Article here...</textarea>
+                </div> 
+        </nav> --> 
+
+        <!-- <div class="container">
+             <h1  onclick="myFunction(this)">Dynamic</h1>
+            <h1  onclick="myFunction(this)">Dynamo</h1>
+            <h1  onclick="myFunction(this)">Dynamically</h1>
+            <h1  onclick="myFunction(this)">princess</h1>
+            <h1  onclick="myFunction(this)">hello</h1>
+            <h1  onclick="myFunction(this)">computer</h1>
+            <h1  onclick="myFunction(this)">word</h1>
+            <h1  onclick="myFunction(this)">search</h1>
+            <h1  onclick="myFunction(this)">jackpot</h1>
+            <h1  onclick="myFunction(this)">pragmatic</h1>
+            <h1  onclick="myFunction(this)">gun</h1>
+            <h1  onclick="myFunction(this)">project</h1> -->
+            <!-- <h2></h2>
+            </div>  -->
+    <!-- </section> --> 
+    
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- Navbar content -->
+        
+            <div class="container-fluid">
+              <a class="navbar-brand" href="">Dictionary</a>
+              
+                
+                
+               
+              </div>
+        
+          </nav>
+          
+     <br>
+     <!-- <div class="container">
+     <div id="jumbo" class="jumbotron">
+        <h1 class="display-4">WELCOMEE!</h1>
+        <p class="lead">This is a simple project where you can paste your article and find the meanings to the difficult words!</p>
+        <hr class="my-4">
+        <p>It uses Meriam Webstar API for returning the meaning!</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Let's get started!</a>
+        </p>
+      </div>
+    </div> -->
+
+    <div class="container" id="Welcome">
+    <header>
+        <!-- Navbar -->
+        
+        <!-- Background image -->
+        <div
+          class="p-5 text-center bg-image"
+          style="
+            background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.jpg');
+            height: 400px;
+            margin-top: 20px;
+            margin-bottom: 20px;11
+          "
+        >
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white py-4" >
+                <h1 class="mb-3">WELCOMEE!</h1>
+                <h4 class="mb-3">You can paste your desired article and find the meanings to the difficult words on just one click!<br>Making lives easier!</h4>
+                <a class="btn btn-outline-light btn-lg" id="getForm" href="#!" role="button"
+                  >Let's get Started!</a
+                >
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Background image -->
+      </header>
+    </div>
+    <div id="mainFrameOne" style="display: none;">
+    <div class="container">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" id="Headingg" class="form-label">Heading</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter the name of your article">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Enter Article</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="20" placeholder="Copy Paste your article"></textarea>
+        
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3" onclick="myFunction()">SUBMIT</button>
+      </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-9">
+<!-- <div class="container"> -->
+    <div id="article">
+        <h1 id="headinggg">
+
+        </h1>
+        <br>
+        <p id="content">>
+
+        </p>
+
+    </div>
+</div>
+<div class="col-3">
+    <div id="meaning">
+
+    </div>
+</div>
+</div>
+</div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="Dictionary.js"></script>
+    
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
